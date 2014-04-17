@@ -27,13 +27,20 @@
 
 - (NSUInteger)vt_numberOfOccurrencesForSubstring:(NSString *)substring
 {
+    return [self vt_numberOfOccurrencesForSubstring:substring
+                                            options:kNilOptions];
+}
+
+- (NSUInteger)vt_numberOfOccurrencesForSubstring:(NSString *)substring
+                                         options:(NSStringCompareOptions)options
+{
     NSUInteger count  = 0;
     NSUInteger length = self.length;
     NSRange    range  = NSMakeRange(0, length);
 
     while(range.location != NSNotFound) {
         range = [self rangeOfString:substring
-                            options:kNilOptions
+                            options:options
                               range:range];
         if(range.location != NSNotFound) {
             range = NSMakeRange(range.location + range.length,

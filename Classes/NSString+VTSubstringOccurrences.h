@@ -21,10 +21,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>;
+#import <Foundation/Foundation.h>
 
 @interface NSString (VTSubstringOccurrences)
 
 - (NSUInteger)vt_numberOfOccurrencesForSubstring:(NSString *)substring;
+- (NSUInteger)vt_numberOfOccurrencesForSubstring:(NSString *)substring
+                                         options:(NSStringCompareOptions)options;
 
 @end
