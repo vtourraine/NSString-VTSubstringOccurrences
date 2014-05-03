@@ -1,0 +1,14 @@
+PODS:
+  - NSString+VTSubstringOccurrences (0.0.1)
+
+DEPENDENCIES:
+  - NSString+VTSubstringOccurrences (from `../`)
+
+EXTERNAL SOURCES:
+  NSString+VTSubstringOccurrences:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NSString+VTSubstringOccurrences: 3e40192eb764e88d4ffb9da08f7d0251cc5cd7db
+
+COCOAPODS: 0.32.1
