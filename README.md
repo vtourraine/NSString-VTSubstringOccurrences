@@ -2,6 +2,8 @@
 
 _`NSString` category to count the number of occurrences for a given substring._
 
+[![Build Status](https://travis-ci.org/vtourraine/NSString-VTSubstringOccurrences.svg?branch=master)](https://travis-ci.org/vtourraine/NSString-VTSubstringOccurrences)
+
 ## How to use
 
 ``` objc
