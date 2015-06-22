@@ -5,6 +5,16 @@ _`NSString` category to count the number of occurrences for a given substring._
 [![Build Status](https://travis-ci.org/vtourraine/NSString-VTSubstringOccurrences.svg?branch=master)](https://travis-ci.org/vtourraine/NSString-VTSubstringOccurrences)
 
 
+## How to install
+
+Available on CocoaPods. ![CocoaPods version badge](https://cocoapod-badges.herokuapp.com/v/NSString+VTSubstringOccurrences/badge.png) 
+![CocoaPods platform badge](https://cocoapod-badges.herokuapp.com/p/NSString+VTSubstringOccurrences/badge.png)
+
+``` ruby
+pod 'NSString+VTSubstringOccurrences'
+```
+
+
 ## How to use
 
 ``` objc
