@@ -1,7 +1,7 @@
 //
 // NSString+VTSubstringOccurrences.h
 //
-// Copyright (c) 2014 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2014-2015 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,28 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ Category on `NSString` to count the number of occurences of substrings.
+ */
 @interface NSString (VTSubstringOccurrences)
 
+/**
+ Counts the number of occurences for a given substring.
+
+ @param substring The substring to look for.
+
+ @return The number of occurences for the substring in the receiver.
+ */
 - (NSUInteger)vt_numberOfOccurrencesForSubstring:(NSString *)substring;
+
+/**
+ Counts the number of occurences for a given substring, with given options.
+
+ @param substring The substring to look for.
+ @param options The string compare options.
+
+ @return The number of occurences for the substring in the receiver.
+ */
 - (NSUInteger)vt_numberOfOccurrencesForSubstring:(NSString *)substring
                                          options:(NSStringCompareOptions)options;
 
